@@ -4,11 +4,11 @@ binary-spec
 ```
 /*
  * *PacketStruct
- *  |RPC|DATASIZE|DATA|CHECKSUM|
- *  RPC=2byte
- *   RPCの値を格納
+ *  |DATASIZE|RPC|DATA|CHECKSUM|
  *  DATASIZE=2byte
  *   CHECKSUM+RPC+DATAのサイズを格納
+ *  RPC=2byte
+ *   RPCの値を格納
  *  DATA=Xbyte
  *   RPCのデータを格納
  *   サイズはSIZE-6で算出可能
